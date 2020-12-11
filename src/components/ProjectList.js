@@ -9,6 +9,7 @@ export default function ProjectList(props) {
       title: "Web Portfolio",
       desc: "The main goal of this website was to be able to have a place to house my projects, but also to have it as a playground for continous growth to change as I do. To the side you can see the vision board I used, which is created from things, people, music, places, and books that have been inspiring me lately. From that I was able to create the colour scheme, layout, and use it as a frame of reference for the project",
       stack: "React, Material UI, Sketch",
+      github: "https://github.com/willzak/portfolio",
       img: "/vision-board.png",
       alt: "website vision board",
       timeframe: "3 days (+ ongoing), December 2020",
