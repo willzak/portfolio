@@ -1,0 +1,105 @@
+$yellow: #ffb700
+
+.about-me
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.group-title
+  margin: 5vw
+  text-decoration: underline
+  margin-bottom: 15vh
+  
+.options-container
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  width: 100%
+
+.single-option
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.options-window
+  width: 80vw
+  margin: 5vw
+  background: rgba( 255, 255, 255, 0.5 )
+  border-radius: 10px
+  -webkit-box-shadow: 3px 3px 4px 5px rgba(221, 221, 221, 0.3)
+  -moz-box-shadow:    3px 3px 4px 5px  rgba(221, 221, 221, 0.3)
+  box-shadow:         3px 3px 4px 5px  rgba(221, 221, 221, 0.3)
+
+.fas
+  font-size: 4em
+  padding: 3vw
+
+.motion-icon-container
+  flex: auto
+  position: relative
+
+.icon-container
+  background-color: $yellow
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 12vw
+  width: 12vw
+  border-radius: 50%
+  margin-bottom: 2vw
+  position: relative
+  z-index: 5000
+
+.motion-icon-container:before 
+  content: ""
+  float: left
+  padding-top: 100%
+
+
+.single-option:hover .effect-1,
+.single-option:hover .effect-2 
+  display: block
+
+.effect-1, .effect-2 
+  border-radius: 50%
+  display: none
+  mix-blend-mode: multiply
+  height: 12vw
+  width: 12vw
+  position: absolute
+  z-index: 3000
+
+.effect-1
+  animation: rotate 1.8s linear infinite
+  background: $yellow
+  opacity: 50%
+
+.effect-2
+  animation: rotate 1.2s linear reverse infinite
+  background: $yellow
+  opacity: 30%
+
+@keyframes rotate
+  0%
+    top: 0
+    left: 8%
+
+  25%
+    top: 8%
+    left: 0%
+
+  50%
+    top: 16%
+    left: 8%
+
+  75%
+    top: 8%
+    left: 16%
+
+  100%
+    top: 0
+    left: 8%
+
+.link
+  color: black
+  text-decoration: none
