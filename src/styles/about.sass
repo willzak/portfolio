@@ -1,4 +1,4 @@
-$yellow: #ffb700
+$color: #FFB700
 
 .about-me
   display: flex
@@ -9,11 +9,13 @@ $yellow: #ffb700
   margin: 5vw
   text-decoration: underline
   margin-bottom: 15vh
+  font-family: "sifonn"
+  font-size: 3em
   
 .options-container
   display: flex
   flex-direction: row
-  justify-content: space-around
+  justify-content: space-evenly
   width: 100%
 
 .single-option
@@ -26,80 +28,59 @@ $yellow: #ffb700
   margin: 5vw
   background: rgba( 255, 255, 255, 0.5 )
   border-radius: 10px
-  -webkit-box-shadow: 3px 3px 4px 5px rgba(221, 221, 221, 0.3)
-  -moz-box-shadow:    3px 3px 4px 5px  rgba(221, 221, 221, 0.3)
-  box-shadow:         3px 3px 4px 5px  rgba(221, 221, 221, 0.3)
-
-.fas
-  font-size: 4em
-  padding: 3vw
-
-.motion-icon-container
-  flex: auto
-  position: relative
-
-.icon-container
-  background-color: $yellow
-  display: flex
-  justify-content: center
-  align-items: center
-  height: 12vw
-  width: 12vw
-  border-radius: 50%
-  margin-bottom: 2vw
-  position: relative
-  z-index: 5000
-
-.motion-icon-container:before 
-  content: ""
-  float: left
-  padding-top: 100%
-
-
-.single-option:hover .effect-1,
-.single-option:hover .effect-2 
-  display: block
-
-.effect-1, .effect-2 
-  border-radius: 50%
-  display: none
-  mix-blend-mode: multiply
-  height: 12vw
-  width: 12vw
-  position: absolute
-  z-index: 3000
-
-.effect-1
-  animation: rotate 1.8s linear infinite
-  background: $yellow
-  opacity: 50%
-
-.effect-2
-  animation: rotate 1.2s linear reverse infinite
-  background: $yellow
-  opacity: 30%
-
-@keyframes rotate
-  0%
-    top: 0
-    left: 8%
-
-  25%
-    top: 8%
-    left: 0%
-
-  50%
-    top: 16%
-    left: 8%
-
-  75%
-    top: 8%
-    left: 16%
-
-  100%
-    top: 0
-    left: 8%
+  -webkit-box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3)
+  -moz-box-shadow:    2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
+  box-shadow:         2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
 
 .link
-  color: black
   text-decoration: none
+
+.btn
+  background: none
+  border: 2px solid
+  border-bottom-width: 4px
+  font: inherit
+  letter-spacing: inherit
+  margin: 1em
+  padding: 1em 2em
+  text-transform: inherit
+  transition: color 1s
+
+.btn-1
+  color: $color
+  
+  &:hover
+    animation: sawtooth 0.35s infinite linear
+    background: linear-gradient(45deg, $color 0.5em, transparent 0.5em) 0 0 / 1em 1em, linear-gradient(-45deg, $color 0.5em, transparent 0.5em) 0 0 / 1em 1em
+    color: adjust-hue($color,-20)
+
+@keyframes sawtooth
+  100%
+    background-position: 1em 0
+
+.btn-2
+  $color2: $color
+  color: $color
+  
+  &:hover
+    animation: blinds 0.75s linear forwards
+    background: linear-gradient(0deg, $color 25%, transparent 25%) 0 0 / 0.5em 0.5em, linear-gradient(0deg, $color2 50%, transparent 50%) 0 0 / 1em 1em
+    color: adjust-hue($color,-20)
+
+@keyframes blinds
+  100%
+    background-position: 0 0, 0 -3em
+    background-size: 0 0, 1em 6em
+
+.btn-3
+  color: $color
+  
+  &:hover
+    animation: zigzag 1s linear infinite
+    background: linear-gradient(135deg, rgba($color,0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba($color,0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba($color,0.25) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba($color,0.25) 0.25em, transparent 0.25em) 0 0
+    background-size: 0.75em 0.75em
+    color: adjust-hue($color,-20)
+
+@keyframes zigzag
+  100%
+    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0

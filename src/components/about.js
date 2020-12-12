@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@material-ui/core";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 import useScript from "../hooks/useScript";
@@ -21,20 +20,17 @@ export default function AboutMe(props) {
         <div class="options-container">
           <Link to="/me" className="link">
             <div class="single-option">
-              <MotionIcon type="me" />
-              <Button>Me</Button>
+              <button class="btn btn-1">Background</button>
             </div>
           </Link>
           <Link to="/experience" className="link">
             <div class="single-option">
-              <MotionIcon type="edu" />
-              <Button>Experience</Button>
+              <button class="btn btn-2">Experience</button>
             </div>
           </Link>
           <Link to="/contact" className="link">
             <div class="single-option">
-              <MotionIcon type="contact" />
-              <Button>Contact</Button>
+              <button class="btn btn-3">Contact</button>
             </div>
           </Link>
         </div>
