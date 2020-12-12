@@ -19,19 +19,22 @@ h1
 
 .proj-container
   display: flex
-  flex-direction: row
+  flex-direction: column
   align-items: center
-  width: 70%
+  width: 80%
   background: rgba( 255, 255, 255, 0.5 )
   border-radius: 10px
   padding: 2vw
   margin: 2vw
 
 .proj-item
-  width: 60%
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 80%
 
 .img-container
-  width: 40%
+  width: 80%
   margin: 4vw
 
 .proj-img
@@ -40,3 +43,24 @@ h1
   -webkit-box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3)
   -moz-box-shadow:    2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
   box-shadow:         2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
+
+@media only screen and (min-width: 1024px)
+
+  .proj-container
+    display: flex
+    flex-direction: row
+    width: 70%
+
+  .proj-item
+    width: 60%
+
+  .img-container
+    width: 40%
+    margin: 4vw
+
+  .proj-img
+    width: 100%
+    border-radius: 5px
+    -webkit-box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow:    2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
+    box-shadow:         2px 2px 3px 3px  rgba(0, 0, 0, 0.3)

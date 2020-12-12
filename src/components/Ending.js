@@ -3,7 +3,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 import "../styles/footer.sass";
 
-export default function Footer(props) {
+export default function Ending(props) {
 
   return (
     <div className="footer">

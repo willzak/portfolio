@@ -19,19 +19,13 @@ export default function AboutMe(props) {
       <Router>
         <div class="options-container">
           <Link to="/me" className="link">
-            <div class="single-option">
-              <button class="btn btn-1">Background</button>
-            </div>
+            <button class="btn btn-1">Background</button>
           </Link>
           <Link to="/experience" className="link">
-            <div class="single-option">
-              <button class="btn btn-2">Experience</button>
-            </div>
+            <button class="btn btn-2">Experience</button>
           </Link>
           <Link to="/contact" className="link">
-            <div class="single-option">
-              <button class="btn btn-3">Contact</button>
-            </div>
+            <button class="btn btn-3">Contact</button>
           </Link>
         </div>
         <div class="options-window">

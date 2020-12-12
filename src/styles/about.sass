@@ -6,25 +6,17 @@ $color: #FFB700
   align-items: center
 
 .group-title
-  margin: 5vw
-  text-decoration: underline
-  margin-bottom: 15vh
   font-family: "sifonn"
   font-size: 3em
   
 .options-container
   display: flex
-  flex-direction: row
-  justify-content: space-evenly
-  width: 100%
-
-.single-option
-  display: flex
   flex-direction: column
   align-items: center
+  width: 90%
 
 .options-window
-  width: 80vw
+  width: 90vw
   margin: 5vw
   background: rgba( 255, 255, 255, 0.5 )
   border-radius: 10px
@@ -84,3 +76,17 @@ $color: #FFB700
 @keyframes zigzag
   100%
     background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0
+
+@media only screen and (min-width: 1024px)
+
+  .options-container
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+
+  .options-window
+    width: 80vw
+
+  .group-title
+    margin: 5vw
+    margin-bottom: 15vw

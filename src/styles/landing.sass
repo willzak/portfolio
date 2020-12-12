@@ -9,8 +9,8 @@ $circle-colour: #0077aa
   align-items: center
 
 .welcome-text
-  width: 50%
-  height: 50vw
+  width: 90vw
+  height: 90vw
   display: flex
   flex-direction: column
   justify-content: center
@@ -19,3 +19,17 @@ $circle-colour: #0077aa
   border-radius: 50%
   color: black
   font-size: 3em
+
+@media only screen and (min-width: 1024px)
+
+  .welcome-text
+    width: 50%
+    height: 50vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $circle-colour
+    border-radius: 50%
+    color: black
+    font-size: 3em
