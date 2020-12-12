@@ -25,6 +25,36 @@ export default function ProjectList(props) {
       timeframe: "10 days, November 2020",
       role: "Front-End Developer, Design Lead",
     },
+    {
+      title: "Jungle",
+      desc: "Welcome to the jungle! Jungle is a web-based mini-ecommerce app built as a project for Lighthouse Labs. The project was partially completed when I took over on it, where I implemented the UI for the checkout cart, added 'sold out' badges on products with no inventory, and included logins and permissions.",
+      stack: "Ruby on Rails, Stripe, Active Record, SCSS",
+      github: "https://github.com/willzak/jungle",
+      img: "/jungle.png",
+      alt: "image of jungle in action",
+      timeframe: "1 week, November 2020",
+      role: "Full-Stack Developer"
+    },
+    {
+      title: "Scheduler",
+      desc: "Scheduler is a React App that takes advantage of React's hooks and state features to allow users to schedule appointments on different days, at different times, with different interviewers.",
+      stack: "React, Storybook, Jest & Cypress, Axios",
+      github: "https://github.com/willzak/scheduler",
+      img: "/scheduler.gif",
+      alt: "gif of user using app to schedule appointments",
+      timeframe: "5 days, November 2020",
+      role: "React Developer"
+    },
+    {
+      title: "WikiMaps",
+      desc: "Wikimaps was created for my midterm group project at Lighthouse Labs, Wikimaps is a single-page application in which users with accounts can create, edit, view, and delete maps with no, one, or many points of interest.",
+      stack: "NodeJS, Express with RESTful routes, Bulma CSS Framework, SASS, JQuery, PostgreSQL",
+      github: "https://github.com/willzak/Midterm-WikiMap",
+      img: "/wikimaps.gif",
+      alt: "Screenshot of WikiMaps App",
+      timeframe: "1 week, October, 2020",
+      role: "Full-Stack Developer"
+    }
   ]
 
   const projList = projects.map(item => {
