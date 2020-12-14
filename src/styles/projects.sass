@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Philosopher&family=Quicksand&display=swap')
+$header-font: 'DM Sans', sans-serif
+$body-font: 'Quicksand', sans-serif
+$title-font: 'Philosopher', sans-serif;
+
+
 .projects-container
   display: flex
   flex-direction: column
@@ -7,8 +13,7 @@
 
 h1
   margin: 3vw
-  text-decoration: underline
-  font-family: "sifonn"
+  font-family: $title-font
   font-size: 3em
 
 .proj-list
@@ -32,6 +37,10 @@ h1
   flex-direction: column
   align-items: center
   width: 80%
+  font-family: $body-font
+
+.proj-item h3
+  font-family: $header-font
 
 .img-container
   width: 80%
