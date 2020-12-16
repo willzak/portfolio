@@ -22,7 +22,7 @@ export default function ProjectItem(props) {
             <li><strong>Stack:</strong> {props.stack}</li>
           </ul>
         </div>
-        { props.github && <Button href={props.github} className={classes.root}>View on Github</Button>}
+        { props.github && <Button href={props.github} className={classes.root} target="_blank">View on Github</Button>}
       </div>
       <div className="img-container">
         <img src={window.location.origin + props.img} alt={props.alt} className="proj-img" />
