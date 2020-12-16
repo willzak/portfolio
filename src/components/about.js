@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 import useScript from "../hooks/useScript";
-import MotionIcon from "./motionIcon";
 import Hobbies from "./Hobbies";
 import Experience from "./Experience";
 import Contact from "./Contact";
