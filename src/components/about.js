@@ -27,12 +27,12 @@ export default function AboutMe(props) {
             <button class="btn btn-3">Contact</button>
           </Link>
         </div>
-        <div class="options-window">
-          <Route exact path="/"><Hobbies /></Route>
-          <Route path="/me"><Hobbies /></Route>
-          <Route path="/experience"><Experience /></Route>
-          <Route path="/contact"><Contact /></Route>
-        </div>
+          <div class="options-window">
+            <Route exact path="/"><Hobbies /></Route>
+            <Route path="/me"><Hobbies /></Route>
+            <Route path="/experience"><Experience /></Route>
+            <Route path="/contact"><Contact /></Route>
+          </div>
       </Router>
     </div>
   )
