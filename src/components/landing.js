@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import Typical from 'react-typical';
 import { Button } from '@material-ui/core';
 
@@ -25,8 +26,22 @@ export default function Landing(props) {
           wrapper="p"
         />
         <div class="link-container">
-          <Button href="#aboutme">About Me</Button>
-          <Button href="#projects">Projects</Button>
+          <Link
+            activeClass="active"
+            to="aboutme"
+            spy={false}
+            smooth={true}
+            offset={0}
+            duration={500}
+          ><Button>About Me</Button></Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={false}
+            smooth={true}
+            offset={0}
+            duration={500}
+          ><Button>Projects</Button></Link>
         </div>
       </div>
     </div>
