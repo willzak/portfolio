@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Philosopher&family=Quicksand&display=swap')
+$header-font: 'DM Sans', sans-serif
+$body-font: 'Quicksand', sans-serif
+$title-font: 'Philosopher', sans-serif;
+
+.nav-bar
+  display: none
+
+@media only screen and (min-width: 650px)
+  .nav-bar
+    width: 100%
+    position: sticky
+    top: 0
+    z-index: 100
+    color: white
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .nav-left
+    display: flex
+    width: 20%
+    margin-left: 20px
+
+  .item-left
+    padding: 10%
+
+  .title-btn
+    outline: none
+    background: rgba(0, 0, 0, 0)
+    font-family: $title-font
+    font-size: 2em
+    font-weight: bolder
+    color: white
+    border: none
+
+  .nav-right
+    display: flex
+    flex-direction: row
+    margin-right: 10%
+
+  .item-right
+    padding: 10%
+    display: flex
+
+  .btn
+    color: white
+    font-family: $body-font
+    font-size: 1.05em
+    padding: 10%
+    background-color: rgba(0, 0, 0, 0)
+    border: none
+
+  button
+    outline: none

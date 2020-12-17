@@ -9,7 +9,7 @@ import 'fontsource-roboto';
 export default function Landing(props) {
 
   return (
-    <div class="screen">
+    <div class="screen" id="top">
       <div class="welcome-text">
         <Typical 
           steps={[
