@@ -13,7 +13,7 @@ export default function ProjectList(props) {
       img: "/vision-board.png",
       alt: "website vision board",
       timeframe: "3 days (+ ongoing), December 2020",
-      role: "Full-Stack Developer + Designer"
+      role: "Fullstack Developer + Designer"
     },
     {
       title: "MonopoRead",
@@ -33,7 +33,7 @@ export default function ProjectList(props) {
       img: "/jungle.png",
       alt: "image of jungle in action",
       timeframe: "1 week, November 2020",
-      role: "Full-Stack Developer"
+      role: "Fullstack Developer"
     },
     {
       title: "Scheduler",
@@ -48,12 +48,22 @@ export default function ProjectList(props) {
     {
       title: "WikiMaps",
       desc: "Wikimaps was created for my midterm group project at Lighthouse Labs, Wikimaps is a single-page application in which users with accounts can create, edit, view, and delete maps with no, one, or many points of interest.",
-      stack: "NodeJS, Express with RESTful routes, Bulma CSS Framework, SASS, JQuery, PostgreSQL",
+      stack: "Node.js, Express with RESTful routes, Bulma CSS Framework, SASS, JQuery, PostgreSQL",
       github: "https://github.com/willzak/Midterm-WikiMap",
       img: "/wikimaps.gif",
       alt: "Screenshot of WikiMaps App",
       timeframe: "1 week, October, 2020",
-      role: "Full-Stack Developer"
+      role: "Fullstack Developer"
+    },
+    {
+      title: "Tweeter",
+      desc: "Tweeter is a simple, single-page application meant to mimic Twitter, and highlight knowledge of HTML, CSS, jQuery, responsive design, and localized updating.",
+      stack: "Node.js, Express, HTML, CSS, jQuery",
+      github: "https://github.com/willzak/tweeter",
+      img: "/tweeter-example.gif",
+      alt: "Screenshot of Tweeter App being used",
+      timeframe: "1 week, October 2020",
+      role: "Fullstack Developer"
     }
   ]
 

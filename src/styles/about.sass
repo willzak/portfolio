@@ -8,89 +8,56 @@ $color: #FFB700
   display: flex
   flex-direction: column
   align-items: center
+  margin-top: 50px
 
 .group-title
   font-family: $title-font
+  color: white
   font-size: 3em
   
-.options-container
+.link
+  text-decoration: none
+
+.animation-container
   display: flex
   flex-direction: column
   align-items: center
   width: 90%
 
-.options-window
-  width: 90vw
-  margin: 5vw
-  background: rgba( 255, 255, 255, 0.5 )
-  border-radius: 10px
-  -webkit-box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3)
-  -moz-box-shadow:    2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
-  box-shadow:         2px 2px 3px 3px  rgba(0, 0, 0, 0.3)
+.animation-container img
+  display: block
+  width: 75%
 
-.link
-  text-decoration: none
+.animation-container lottie-player
+  display: none
 
-.btn
-  background: none
-  border: 2px solid
-  border-bottom-width: 4px
-  font: inherit
-  letter-spacing: inherit
-  margin: 1em
-  padding: 1em 2em
-  text-transform: inherit
-  transition: color 1s
-  outline: none
+@media only screen and (min-width: 650px)
 
-.btn-1
-  color: $color
-  
-  &:hover
-    animation: sawtooth 0.35s infinite linear
-    background: linear-gradient(45deg, $color 0.5em, transparent 0.5em) 0 0 / 1em 1em, linear-gradient(-45deg, $color 0.5em, transparent 0.5em) 0 0 / 1em 1em
-    color: adjust-hue($color,-20)
-
-@keyframes sawtooth
-  100%
-    background-position: 1em 0
-
-.btn-2
-  $color2: $color
-  color: $color
-  
-  &:hover
-    animation: blinds 0.75s linear forwards
-    background: linear-gradient(0deg, $color 25%, transparent 25%) 0 0 / 0.5em 0.5em, linear-gradient(0deg, $color2 50%, transparent 50%) 0 0 / 1em 1em
-    color: adjust-hue($color,-20)
-
-@keyframes blinds
-  100%
-    background-position: 0 0, 0 -3em
-    background-size: 0 0, 1em 6em
-
-.btn-3
-  color: $color
-  
-  &:hover
-    animation: zigzag 1s linear infinite
-    background: linear-gradient(135deg, rgba($color,0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba($color,0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba($color,0.25) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba($color,0.25) 0.25em, transparent 0.25em) 0 0
-    background-size: 0.75em 0.75em
-    color: adjust-hue($color,-20)
-
-@keyframes zigzag
-  100%
-    background-position: 1em 0, 1em 0, -0.75em 0 , -0.75em 0
-
-@media only screen and (min-width: 1024px)
-
-  .options-container
+  .about-me
     display: flex
     flex-direction: row
-    justify-content: space-evenly
+    align-items: center
+    width: 90%
+    margin-top: 25vh
+    margin-bottom: 25vh
 
-  .options-window
-    width: 74%
+  .animation-container
+    margin-left: 7vw
+    width: 40%
+
+  .animation-container img
+    width: 300px
 
   .group-title
-    margin: 5vw
+    text-align: center
+    margin-bottom: 50px
+
+  .text-container
+    width: 60%
+    margin-top: 5vw
+
+  .animation-container img
+    display: none
+
+  .animation-container lottie-player
+    display: block

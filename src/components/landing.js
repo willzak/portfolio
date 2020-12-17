@@ -31,7 +31,7 @@ export default function Landing(props) {
             to="aboutme"
             spy={false}
             smooth={true}
-            offset={0}
+            offset={-100}
             duration={500}
           ><Button>About Me</Button></Link>
           <Link

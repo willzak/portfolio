@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Philosopher&family=Quicksand&display=swap')
+$header-font: 'DM Sans', sans-serif
+$body-font: 'Quicksand', sans-serif
+$title-font: 'Philosopher', sans-serif;
+
+$footer-colour: #0077AA
+
 .footer
   width: 100vw
-  color: #FFF
+  color: #FFFFFF
   text-align: center
   display: flex
   flex-direction: column
   align-items: center
 
+svg
+    width: 100%
+
 .footer-info
-  background-color: #ffaa00
+  background-color: $footer-colour
   width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.footer-info p
+  width: 90%
 
 .footer a
   color: white
@@ -30,5 +46,5 @@
     align-items: center
 
   .footer-info
-    background-color: #ffaa00
+    font-family: $body-font
     width: 100%
