@@ -1,5 +1,6 @@
 import { Button } from "@material-ui/core";
 import Fade from "react-reveal/Fade";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import useStyles from "../hooks/useStyles";
 
@@ -23,7 +24,8 @@ export default function ProjectItem(props) {
               <li><strong>Stack:</strong> {props.stack}</li>
             </ul>
           </div>
-          { props.github && <Button href={props.github} className={classes.root} target="_blank">View on Github</Button>}
+          { props.github && <Button href={props.github} className={classes.root} target="_blank">View on Github</Button> }
+          { props.design && <Link to={props.design}><Button href={props.design} className={classes.root} target="_blank">View Design</Button></Link> }
         </div>
         <div className="img-container">
           <img src={window.location.origin + props.img} alt={props.alt} className="proj-img" />

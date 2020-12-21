@@ -1,20 +1,29 @@
 import React from "react";
-import Landing from "./landing";
-import AboutMe from "./about";
-import Projects from "./Projects";
-import Ending from "./Ending";
-import Nav from "./Nav";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Home from "./Home";
+import DesignItem from "./MonopoReadUX"
 
 import "../styles/index.sass";
 
 export default function WebContainer(props) {
   return (
     <div class="background">
-      <Nav />
-      <Landing />
-      <AboutMe />
-      <Projects />
-      <Ending />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/monoporead">
+            <DesignItem project={"monoporead"} />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   )
 }

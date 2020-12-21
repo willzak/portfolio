@@ -20,6 +20,7 @@ export default function ProjectList(props) {
       desc: "Born out of a mutual love for reading, a need to connect in news ways during the spread of COVID-19, and a much needed push to highlight disenfranchised authors, MonopoRead challenges players to read more books by gamifying the process and giving book suggestions.",
       stack: "React, Ruby on Rails, CSS, Figma, Heroku",
       github: "https://github.com/willzak/MonopoRead",
+      design: "/monoporead",
       img: "/monoporead_board.png",
       alt: "MonopoRead game board",
       timeframe: "10 days, November 2020",
@@ -74,6 +75,7 @@ export default function ProjectList(props) {
         desc={item.desc}
         stack={item.stack}
         github={item.github}
+        design={item.design}
         img={item.img}
         alt={item.alt}
         timeframe={item.timeframe}
