@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 
-import useScript from "../hooks/useScript"
-import Nav from "./Nav"
+import useScript from "../hooks/useScript";
+import Nav from "./Nav";
+import Ending from "./Ending";
 
 import "../styles/ux.sass";
 
@@ -27,6 +28,7 @@ export default function DesignItem(props) {
         </div>
       </div>
       <div className="intro">
+        <img src={window.location.origin + "/monoporead-banner.png"} alt="MonopoRead: The Reading Competition App" className="proj-img" />
         <h2>The Reading Competition App that Promotes Minority Writers</h2>
         <div className="brief">MonopoRead (like Monopoly) uses a Monopoly board to create a multi-player challenge to read the most books the fastest. At its base it looks to recommend pieces by minority writers to promote those whose stories often go untold.</div>
       </div>
@@ -56,6 +58,8 @@ export default function DesignItem(props) {
             <div className="section-content"><strong>Design Methods Used:</strong> Interviews, Wireframes, ERD Diagrams, Prototyping</div>
           </div>
         </div>
+
+        <img src={window.location.origin + "/monoporead-wireframe.png"} alt="MonopoRead: wireframes" className="proj-img" className="wireframes" />
 
         <div className="body-item">
           <div className="section-title">
@@ -97,6 +101,7 @@ export default function DesignItem(props) {
 
       </div>
     </div>
+    <Ending />
     </>
   )
 }
