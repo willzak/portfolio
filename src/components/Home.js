@@ -11,7 +11,7 @@ import "../styles/index.sass";
 export default function Home(props) {
   return (
     <div class="background">
-      <Nav />
+      <Nav home={true} />
       <Landing />
       <AboutMe />
       <Projects />
