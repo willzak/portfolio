@@ -1,5 +1,6 @@
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import SportsBasketballIcon from '@material-ui/icons/SportsBasketball';
 
 import "../styles/footer.sass";
 
@@ -12,8 +13,9 @@ export default function Ending(props) {
         <div className="links-container">
           <a href="https://www.linkedin.com/in/williamzak/"><LinkedInIcon /></a>
           <a href="https://github.com/willzak"><GitHubIcon /></a>
+          <a href="https://dribbble.com/willzak"><SportsBasketballIcon /></a>
         </div>
-        <p>Created & Designed by Will Zak | © 2020 William Zak</p>
+        <p>Created & Designed by Will Zak | © 2020 Will Zak</p>
       </div>  
     </div>
   )

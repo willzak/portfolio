@@ -26,7 +26,7 @@ export default function ProjectItem(props) {
           </div>
           <div className="btn-container">
             { props.github && <Button href={props.github} className={classes.root} target="_blank">View on Github</Button> }
-            { props.design && <Link to={props.design} className="linker"><Button href={props.design} className={classes.root} target="_blank">View Design</Button></Link> }
+            { props.design && <Link to={props.design} className="linker" style={{"text-decoration": "none"}}><Button href={props.design} className={classes.root} target="_blank">View UX</Button></Link> }
           </div>
         </div>
         <div className="img-container">

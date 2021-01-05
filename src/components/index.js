@@ -8,6 +8,7 @@ import {
 
 import Home from "./Home";
 import DesignItem from "./MonopoReadUX"
+import ScrollToTop from "./ScrollToTop";
 
 import "../styles/index.sass";
 
@@ -15,14 +16,13 @@ export default function WebContainer(props) {
   return (
     <div class="background">
       <Router>
-        <Switch>
+          <ScrollToTop />
           <Route exact path="/">
             <Home />
           </Route>
           <Route path="/monoporead">
             <DesignItem project={"monoporead"} />
           </Route>
-        </Switch>
       </Router>
     </div>
   )

@@ -24,15 +24,6 @@ export default function Nav(props) {
           <Link
             className="item-right"
             activeClass="active"
-            to="top"
-            spy={false}
-            smooth={true}
-            offset={0}
-            duration={500}
-          ><button className="btn">Home</button></Link>
-          <Link
-            className="item-right"
-            activeClass="active"
             to="aboutme"
             spy={false}
             smooth={true}
@@ -57,19 +48,8 @@ export default function Nav(props) {
   return (
     <div className="nav-bar">
       <div className="nav-left">
-        <Link
-          className="item-left"
-          activeClass="active"
-          to="top"
-          spy={false}
-          smooth={true}
-          offset={0}
-          duration={500}
-        ><button className="title-btn">Will Zak</button></Link>
-      </div>
-      <div className="nav-right">
-        <BrowserLink to="/">
-          <button className="btn">Home</button>
+        <BrowserLink className="item-left" to="/">
+          <button className="title-btn">Will Zak</button>
         </BrowserLink>
       </div>
     </div>
