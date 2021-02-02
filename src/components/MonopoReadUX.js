@@ -86,6 +86,9 @@ export default function DesignItem(props) {
           </div>
         </div>
 
+        <img src={window.location.origin + "/HF-MonopoRead.png"} alt="MonopoRead: High Fidelity Model" className="hf-img"/>
+
+
         <div className="body-item">
           <div className="section-title">
             <div>The Takeaways</div>
