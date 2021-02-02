@@ -13,14 +13,10 @@ export default function Landing(props) {
       <div class="welcome-text">
         <Typical 
           steps={[
-            'Hey!', 3000,
-            'Welcome!', 3000,
-            'Bonjour!', 3000,
-            'Bienvenue!', 3000,
-            'Hej!', 3000,
-            'Välkommen!', 3000,
-            '안녕하세요!', 3000,
-            '어서 오십시오!', 3000
+            'Hey!', 2000,
+            'I\'m Will!', 2000,
+            'I\'m a Developer', 3000,
+            'and UX Designer', 3000,
           ]}
           loop={Infinity}
           wrapper="p"
